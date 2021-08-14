@@ -1,0 +1,48 @@
+<%- include('partials/header') %>
+<div class="container-fluid logo-style">
+  <img src="images/btc.png" alt="btc" height="200rem" width="200rem">
+  <h1 class="big-heading">coinmoneycrypto</h1>
+</div>
+
+
+<div class="jumbotron centered">
+  <div class="container">
+    <i class="fab fa-hive fa-6x"></i>
+    <h1 class="display-3">Get Started</h1>
+    <h3>Don't miss out on the biggest asset class!</h3>
+    <h4>Say hello to cryptocurrencies!</h4>
+    <p class="lead">Create your account and start your crypto trading journey.</p>
+    <hr>
+    <a class="btn btn-light btn-lg" href="/register" role="button">Register</a>
+    <a class="btn btn-dark btn-lg" href="/login" role="button">Login</a>
+
+  </div>
+</div>
+
+
+<div class="container-fluid disclaimer">
+  <p>No Investment Advice:
+    The information provided on this website does not constitute investment advice, financial advice, trading advice, or any
+    other sort of advice and you should not treat any of the website's content as such. coinmoneycrypto does not recommend
+    that any cryptocurrency should be bought, sold, or held by you. Do conduct your own due diligence and consult your
+    financial advisor before making any investment decisions.
+    Trading cryptocurrencies carries a high level of risk, and may not be suitable for all investors. Before deciding to
+    trade cryptocurrency you should carefully consider your investment objectives, level of experience, and risk appetite.
+    The possibility exists that you could sustain a loss of some or all of your initial investment and therefore you should
+    not invest money that you cannot afford to lose. You should be aware of all the risks associated with cryptocurrency
+    trading, and seek advice from an independent financial advisor.</p>
+</div>
+
+
+
+
+
+<!-- this script is used to stop back button after logout to see content of website by disable back button -->
+<!-- but this is not the permanent solution,permanent solution is to clear the cache after logout button -->
+<script>
+  history.pushState(null, null, null);
+  window.addEventListener('popstate', function() {
+    history.pushState(null, null, null);
+  });
+</script>
+<%- include('partials/footer') %>

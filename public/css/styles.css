@@ -1,0 +1,317 @@
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.border-brand-heading{
+border: 5px solid white;
+padding: 1% 2%;
+}
+.border-heading{
+  background-color: black;
+  color:white;
+  padding: 1% 3%;
+}
+#faq .border-heading{
+  margin:2% 7%;
+}
+.border-heading-realtime{
+  margin:2% 4%;
+}
+
+
+
+
+/* for line animation of yellow golden colour */
+
+.orange-heading{
+  color: #FFDF00;
+  font-weight: bold;
+  display: inline-block;
+  padding: 2% 0%;
+  position: relative;
+  font-family:inherit;
+}
+.orange-heading:after {
+  background: none repeat scroll 0 0 transparent;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 50%;
+  position: absolute;
+  background: #FFDF00;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.orange-heading:hover:after {
+  width: 100%;
+  left: 0;
+}
+/* ------------------- */
+
+/* Containers */
+
+.container-fluid{
+  padding: 7% 15%;
+}
+footer .container-fluid{
+  padding: 12% 15%;
+}
+
+
+/* Sections */
+
+.colored-section {
+  background-color: white;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+/* Buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+
+#title {
+  background-color: #0066ff;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* Title Image */
+
+.title-image {
+  width: 100%;
+  transform: rotate(25deg);
+  position: absolute;
+  left: 0%;
+
+}
+
+/* Features Section */
+
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #0066ff;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #0066ff;
+}
+
+/* Testimonial Section */
+/*  Testimonials or referrals of big personality or celebrities */
+
+#testimonials {
+  background-color: #66a3ff;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+/* Companies logo who follows bitcoin */
+
+#press {
+  background-color: white;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+.apple,.bmw,.goldman{
+  width:12%
+}
+/* Pricing Section */
+/* main exchanges in india */
+
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+.pricing-paragraph{
+  text-align: justify;
+}
+/* CTA Section */
+/* some top crypto currencies in the world right now */
+#cta{
+  text-align: justify;
+}
+#cta h1{
+  text-align: center;
+  padding :0% 5% 0%;
+}
+
+
+/* FAQ Section */
+.faqClass{
+  text-align: justify;
+}
+
+#faq,#faq button{
+  font-size: 1.3rem;
+}
+
+#faq .container-fluid{
+  padding: 0%;
+}
+
+
+#rtc button{
+  margin:50px 20px;
+}
+
+
+/* Footer Section */
+
+footer{
+background-color: #000000;
+color:white;
+
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+.disc{
+text-align: justify;
+}
+
+.login,.register{
+  text-align: justify;
+  padding: 3% 10% 7% 25%;
+}
+
+.logo-style{
+  background-color: #0066ff;
+  color:white;
+  border: 5px solid orange;
+  padding-bottom: 9%;
+  padding-top: 9%;
+}
+.disclaimer{
+  background-color: #E0E0E0;
+ color:black;
+ text-align: justify;
+ font-size: 1.3rem;
+ font-family:sans-serif;
+ padding:15% 7%;
+}
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+/* for rotating image back to its normal form from slanted */
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+  /* for faq line break when screen size is smaller*/
+  .spanFaq {
+     display: inline;
+   }
+   .spanFaq:before {
+     content: "\a ";
+     white-space: pre;
+   }
+   .logHeading{
+     font-size: 1.4rem;
+   }
+   .press-logo {
+     width: 25%;
+   }
+   #pricing .border-heading{
+     font-size: 2rem
+   }
+
+
+}
